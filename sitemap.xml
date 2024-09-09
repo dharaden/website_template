@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://dharaden.github.io/website_template/subsection-files/index.html</loc>
+    <lastmod>2024-09-09T03:18:00.904Z</lastmod>
+  </url>
+  <url>
+    <loc>https://dharaden.github.io/website_template/subsection-files/jupyter.html</loc>
+    <lastmod>2024-09-09T03:18:00.904Z</lastmod>
+  </url>
+  <url>
     <loc>https://dharaden.github.io/website_template/explore.html</loc>
-    <lastmod>2024-09-09T03:08:23.693Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dharaden.github.io/website_template/quarto-workflows/index.html</loc>
-    <lastmod>2024-09-09T03:08:23.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dharaden.github.io/website_template/quarto-workflows/jupyter.html</loc>
-    <lastmod>2024-09-09T03:08:23.749Z</lastmod>
-  </url>
-  <url>
-    <loc>https://dharaden.github.io/website_template/transition-from-rmarkdown.html</loc>
-    <lastmod>2024-09-09T03:08:23.753Z</lastmod>
+    <lastmod>2024-09-09T03:18:00.872Z</lastmod>
   </url>
   <url>
     <loc>https://dharaden.github.io/website_template/learning-more.html</loc>
-    <lastmod>2024-09-09T03:08:23.717Z</lastmod>
+    <lastmod>2024-09-09T03:18:00.872Z</lastmod>
   </url>
   <url>
     <loc>https://dharaden.github.io/website_template/index.html</loc>
-    <lastmod>2024-09-09T03:08:23.717Z</lastmod>
+    <lastmod>2024-09-09T03:18:00.872Z</lastmod>
   </url>
   <url>
-    <loc>https://dharaden.github.io/website_template/quarto-workflows/browser.html</loc>
-    <lastmod>2024-09-09T03:08:23.717Z</lastmod>
+    <loc>https://dharaden.github.io/website_template/subsection-files/sub_2.html</loc>
+    <lastmod>2024-09-09T03:18:00.904Z</lastmod>
   </url>
   <url>
-    <loc>https://dharaden.github.io/website_template/quarto-workflows/rstudio.html</loc>
-    <lastmod>2024-09-09T03:08:23.753Z</lastmod>
+    <loc>https://dharaden.github.io/website_template/subsection-files/sub_1.html</loc>
+    <lastmod>2024-09-09T03:18:00.904Z</lastmod>
   </url>
 </urlset>
