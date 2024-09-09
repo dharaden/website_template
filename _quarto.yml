@@ -34,14 +34,11 @@ website:
       - href: index.qmd
         text: Home
       - explore.qmd
-      - section: quarto-workflows/index.qmd
+      - section: subsection-files/index.qmd
         contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
+          - subsection-files/sub_1.qmd
+          - subsection-files/sub_2.qmd 
       - learning-more.qmd
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
 
 
 format:
