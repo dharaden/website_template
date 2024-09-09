@@ -4,13 +4,13 @@ project:
 website: 
   page-navigation: true
   title: "Website Template" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
-  repo-actions: [edit, issue]
+  site-url: "https://dharaden.github.io/website_template" 
+  repo-url: https://github.com/dharaden/website_template 
+  repo-actions: [issue]
   
   page-footer:
-    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2024"
+    right: "This page is built with ☕ and [Quarto](https://quarto.org/)."
+    left: "&copy; CC-By Dustin Haraden, 2024"
     
   sidebar:
     logo: "images/openscapes_hex.png"
@@ -18,21 +18,21 @@ website:
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://google.com
+        text: "Your Website"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
+        href: https://github.com/
+        text: "Your Github"
       - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://twitter.com/
+        text: "Your Twitter"         
 
     style: "docked"
     search: true
     collapse-level: 1
     contents:
       - href: index.qmd
-        text: Welcome
+        text: Home
       - explore.qmd
       - section: quarto-workflows/index.qmd
         contents: 
