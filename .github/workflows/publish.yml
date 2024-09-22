@@ -1,51 +1,33 @@
 on:
+  workflow_dispatch:
   push:
     branches: main
 
-name: Render and Publish
+name: Quarto Publish
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-    
+    permissions:
+      contents: write
     steps:
       - name: Check out repository
-        uses: actions/checkout@v2
-        
+        uses: actions/checkout@v4
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          # To install LaTeX to build PDF book 
-          tinytex: true
 
-      - name: Set up R
+      - name: Install R
         uses: r-lib/actions/setup-r@v2
-        
-      - name: Cache R packages
-        uses: actions/cache@v2
         with:
-          path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('DESCRIPTION') }}
-          restore-keys: ${{ runner.os }}-r-
+          r-version: '4.2.0'
 
-        
-      - name: Install R dependencies
-        uses: r-lib/actions/setup-r-dependencies@v2
+      - name: Install R Dependencies
+        uses: r-lib/actions/setup-renv@v2
         with:
-          packages:
-            any::knitr
-            any::rmarkdown
-            any::downlit
-            any::xml2
-            any::here
-            any::rio
-            any::tidyverse
-            any::tinytable
-            any::gt
-            any::gtExtras
-            # Add more packages as needed
-      
-      - name: Render and Publish to GitHub Pages
+          cache-version: 1
+
+      - name: Render and Publish
         uses: quarto-dev/quarto-actions/publish@v2
         with:
           target: gh-pages

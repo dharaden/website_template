@@ -1,8 +1,6 @@
 ---
 title: "Home Page"
 subtitle: "You can also have a subtitle here"
-editor_options: 
-  chunk_output_type: console
 ---
 
 ## Welcome {#welcome}
@@ -12,25 +10,3 @@ This is a template website that you can use for your own stuff! Hopefully this i
 ## About
 
 Dustin Haraden is a psychology professor and has a focus on transparency and equity when it comes to science and technology. Use this site however you can to increase your outreach! This is a template from [Openscapes](https://openscapes.org).
-
-```{r echo=FALSE, message=FALSE, warning=FALSE}
-library(rio)
-library(here)
-library(tinytable)
-library(gt)
-library(gtExtras)
-library(dplyr)
-
-board <- import(here("data", "psyc101XP.xlsx"))
-
-#tt(board)
-
-#https://jthomasmock.github.io/gtExtras/articles/plotting-with-gtExtras.html
-
-board %>% 
-  arrange(desc(XP)) %>% 
-  gt() %>%
-  gt_plt_bar(column = XP, keep_column = TRUE, width = 35)
-
-
-```
