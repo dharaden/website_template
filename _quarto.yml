@@ -3,7 +3,7 @@ project:
   
 website: 
   page-navigation: true
-  title: "Website Template" 
+  title: "PSYC 101 - Leaderboard" 
   site-url: "https://dharaden.github.io/website_template" 
   repo-url: https://github.com/dharaden/website_template 
   repo-actions: [issue]
@@ -33,14 +33,6 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - explore.qmd
-      - table.qmd
-      - section: subsection-files/index.qmd
-        contents: 
-          - subsection-files/sub_1.qmd
-          - subsection-files/sub_2.qmd 
-      - learning-more.qmd
-
 
 format:
   html:
