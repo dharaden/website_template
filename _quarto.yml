@@ -34,7 +34,6 @@ website:
       - href: index.qmd
         text: Home
       - newpage.qmd
-      - table.qmd
       - section: subsection-files/index.qmd
         contents: 
           - subsection-files/sub_1.qmd
