@@ -25,7 +25,7 @@ jobs:
         uses: actions/cache@v2
         with:
           path: ${{ env.R_LIBS_USER }}
-          key: ${{ runner.os }}-r-${{ hashFiles('DESCRIPTION') }}
+          key: ${{ runner.os }}-r-${{ hashFiles('.github/pkg.lock') }}
           restore-keys: ${{ runner.os }}-r-
 
         
@@ -33,15 +33,12 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages:
-            any::knitr
-            any::rmarkdown
-            any::downlit
-            any::xml2
-            any::here
-            any::rio
-            any::tidyverse
-            any::psych
-            any::sjPlot
+            knitr
+            rmarkdown
+            downlit
+            xml2
+            here
+            rio
             # Add more packages as needed
       
       - name: Render and Publish to GitHub Pages
